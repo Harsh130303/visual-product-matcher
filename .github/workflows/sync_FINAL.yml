@@ -10,11 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
       - name: Install HF CLI
-        run: pip install huggingface_hub
-      - name: "Deployment: Uploading all files (Direct CLI Mode)"
+        run: pip install --upgrade huggingface_hub
+      - name: "Deployment: Uploading all files (Official CLI Mode)"
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           echo "Starting secure upload of all project files..."
-          python3 -m huggingface_hub.commands.huggingface_cli upload Harsh-13yo/vpm-backend . --repo-type=space --token=$HF_TOKEN --yes
+          huggingface-cli upload Harsh-13yo/vpm-backend . --repo-type=space --token=$HF_TOKEN --yes
