@@ -1,7 +1,11 @@
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from ml_service import get_ml_service
-from database import get_db
+try:
+    from ml_service import get_ml_service
+    from database import get_db
+except ImportError:
+    from backend.ml_service import get_ml_service
+    from backend.database import get_db
 from PIL import Image
 from io import BytesIO
 import uvicorn
