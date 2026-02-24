@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          lfs: true
+      - name: Install Hugging Face Hub
+        run: pip install huggingface_hub
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://Harsh-13yo:$HF_TOKEN@huggingface.co/spaces/Harsh-13yo/vpm-backend main
+        run: huggingface-cli upload Harsh-13yo/vpm-backend . . --repo-type=space --token=$HF_TOKEN --yes
