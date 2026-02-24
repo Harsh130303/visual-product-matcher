@@ -1,18 +1,19 @@
-# Use official Python base image
-FROM python:3.9
+# Use official Hugging Face base image with torch and transformers pre-installed
+FROM huggingface/transformers-cpu:latest
 
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies
+# Install system dependencies (some are already there, but we ensure)
+USER root
 RUN apt-get update && apt-get install -y \
-    build-essential \
     libgl1-mesa-glx \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
 # Create a non-root user (Hugging Face requirement)
-RUN useradd -m -u 1000 user
+# The base image might already have a user, but we ensure ours exists
+RUN useradd -m -u 1000 user || echo "User already exists"
 USER user
 ENV PATH="/home/user/.local/bin:$PATH"
 ENV PYTHONPATH="/app/backend"
@@ -20,15 +21,11 @@ ENV PYTHONPATH="/app/backend"
 # Copy everything from root
 COPY --chown=user . .
 
-# Install dependencies from the copied backend folder
-RUN pip install --no-cache-dir -r backend/requirements.txt
-
-# The code expects 'data' to be accessible relative to the app
-# Our new path logic in database.py will check both 'data/' and '../data/'
+# Install only the lightweight dependencies not in the base image
+RUN pip install --no-cache-dir fastapi uvicorn python-multipart requests pydantic pillow scikit-learn numpy
 
 # Expose port 7860
 EXPOSE 7860
 
 # Command to run the application
-# We run from the root, so we need to point to backend.main:app
 CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "7860"]
