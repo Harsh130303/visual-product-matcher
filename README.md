@@ -1,3 +1,13 @@
+---
+title: Vpm Backend
+emoji: 🕵️‍♂️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Visual Product Matcher
 Last Sync Attempt: 2026-02-24
 
