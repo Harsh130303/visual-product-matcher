@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Modern Velvet Sofa",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Oak Dining Table",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Minimalist Desk Lamp",
+    "category": "Lighting",
+    "image_url": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Ergonomic Office Chair",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Walnut Bookshelf",
+    "category": "Storage",
+    "image_url": "https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Linen Armchair",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Marble Coffee Table",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Pendant Light",
+    "category": "Lighting",
+    "image_url": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 9,
+    "name": "Teak Outdoor Chair",
+    "category": "Outdoor",
+    "image_url": "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 10,
+    "name": "Ceramic Side Table",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1533090368676-1fd25485db88?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 11,
+    "name": "Rattan Lounge Chair",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 12,
+    "name": "Industrial Floor Lamp",
+    "category": "Lighting",
+    "image_url": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 13,
+    "name": "Floating Wall Shelf",
+    "category": "Storage",
+    "image_url": "https://images.unsplash.com/photo-1506898667547-42e22a46e125?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 14,
+    "name": "Upholstered Bed Frame",
+    "category": "Bedroom",
+    "image_url": "https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 15,
+    "name": "Solid Wood Nightstand",
+    "category": "Bedroom",
+    "image_url": "https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 16,
+    "name": "Woven Area Rug",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 17,
+    "name": "Abstract Wall Art",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 18,
+    "name": "Leather Executive Chair",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 19,
+    "name": "Circular Dining Table",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 20,
+    "name": "Velvet Throw Pillows",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 21,
+    "name": "Gold Frame Mirror",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 22,
+    "name": "Bamboo Bench",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 23,
+    "name": "Ceramic Table Lamp",
+    "category": "Lighting",
+    "image_url": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 24,
+    "name": "Glass Top Coffee Table",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 25,
+    "name": "Macrame Wall Hanging",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 26,
+    "name": "Tufted Ottoman",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 27,
+    "name": "Wooden TV Stand",
+    "category": "Storage",
+    "image_url": "https://images.unsplash.com/photo-1601333144130-8cbb312386b6?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 28,
+    "name": "Bar Stool Set (2)",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 29,
+    "name": "Kitchen Pendant lamp",
+    "category": "Lighting",
+    "image_url": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 30,
+    "name": "Suede Recliner",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 31,
+    "name": "Geometric Rug",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 32,
+    "name": "Sideboard Buffet",
+    "category": "Storage",
+    "image_url": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 33,
+    "name": "Cactus Decor Pot",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 34,
+    "name": "Copper Desk Lamp",
+    "category": "Lighting",
+    "image_url": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 35,
+    "name": "Modular Sofa Sectional",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 36,
+    "name": "Nested Side Tables",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1533090368676-1fd25485db88?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 37,
+    "name": "Sheer Curtains",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 38,
+    "name": "Wrought Iron Bed",
+    "category": "Bedroom",
+    "image_url": "https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 39,
+    "name": "Velvet Vanity Stool",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 40,
+    "name": "Modern Chandelier",
+    "category": "Lighting",
+    "image_url": "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 41,
+    "name": "Scandinavian Side Chair",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 42,
+    "name": "Rustic Dining Table",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 43,
+    "name": "Leather Poof",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 44,
+    "name": "Mirror with shelf",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 45,
+    "name": "Art Deco Armchair",
+    "category": "Seating",
+    "image_url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 46,
+    "name": "Wooden Wardrobe",
+    "category": "Bedroom",
+    "image_url": "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 47,
+    "name": "Tabletop Planter",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 48,
+    "name": "Task Desk",
+    "category": "Tables",
+    "image_url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 49,
+    "name": "Fluffy Shag Rug",
+    "category": "Decor",
+    "image_url": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 50,
+    "name": "Modern Nightstand",
+    "category": "Bedroom",
+    "image_url": "https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=800&q=80"
+  }
+]
