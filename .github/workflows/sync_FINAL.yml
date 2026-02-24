@@ -1,21 +1,20 @@
-# OFFICIAL SYNC v6 - USING HF CLI (BYPASSING 10MB LIMIT)
-name: Sync to Hugging Face v6
+# FINAL SYNC SYSTEM - DO NOT USE GIT PUSH
+name: Deploy to Hugging Face
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 jobs:
-  sync-to-hub:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Hugging Face Hub
+      - name: Install HF CLI
         run: pip install huggingface_hub
-      - name: "v7: Official HF Upload Tool"
+      - name: "Deployment: Uploading all files (Direct CLI Mode)"
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          echo "Listing files to be uploaded:"
-          ls -R
+          echo "Starting secure upload of all project files..."
           huggingface-cli upload Harsh-13yo/vpm-backend . --repo-type=space --token=$HF_TOKEN --yes
