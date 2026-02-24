@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install Hugging Face Hub
         run: pip install huggingface_hub
-      - name: Push to hub
+      - name: "Step 5: Official HF Upload Tool (Bypassing 10MB Limit)"
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: huggingface-cli upload Harsh-13yo/vpm-backend . . --repo-type=space --token=$HF_TOKEN --yes
