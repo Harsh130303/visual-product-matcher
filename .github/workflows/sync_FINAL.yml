@@ -14,11 +14,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Install HF CLI
-        run: pip install --upgrade huggingface_hub
-      - name: "Deployment: Uploading all files (Official CLI Mode)"
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      - name: Install HF Hub
+        run: pip install huggingface_hub
+      - name: "Deployment: Official Python Upload (Bypassing Shell Issues)"
         run: |
-          echo "Starting secure upload of all project files..."
-          huggingface-cli upload Harsh-13yo/vpm-backend . --repo-type=space --token=$HF_TOKEN --yes
+          python -c "from huggingface_hub import HfApi; api = HfApi(); api.upload_folder(folder_path='.', repo_id='Harsh-13yo/vpm-backend', repo_type='space', token='${{ secrets.HF_TOKEN }}')"
