@@ -3,8 +3,18 @@ import os
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "products.json")
-EMBEDDINGS_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "products_with_embeddings.json")
+def find_data_file(filename):
+    # Try current dir/data/filename (for Docker structure)
+    path1 = os.path.join(os.path.dirname(__file__), "data", filename)
+    # Try parent dir/data/filename (for local structure where database.py is in backend/)
+    path2 = os.path.join(os.path.dirname(__file__), "..", "data", filename)
+    
+    if os.path.exists(path1):
+        return path1
+    return path2
+
+DATA_PATH = find_data_file("products.json")
+EMBEDDINGS_PATH = find_data_file("products_with_embeddings.json")
 
 class ProductDatabase:
     def __init__(self):

@@ -11,34 +11,23 @@ RUN apt-get update && apt-get install -y \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-# Create a non-root user for security (Hugging Face requirement)
+# Create a non-root user (Hugging Face requirement)
 RUN useradd -m -u 1000 user
 USER user
 ENV PATH="/home/user/.local/bin:$PATH"
 
-# Copy requirements and install dependencies
-# We assume the build context is the repository root
-COPY --chown=user backend/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy everything from root
+COPY --chown=user . .
 
-# Copy the backend code and data
-COPY --chown=user backend/ .
-COPY --chown=user data/ /app/data
+# Install dependencies from the copied backend folder
+RUN pip install --no-cache-dir -r backend/requirements.txt
 
-# Ensure the data path is correctly set in environment if needed, 
-# but our code uses relative paths (.. from backend), so we need to match that structure.
-# Currently database.py uses: os.path.join(os.path.dirname(__file__), "..", "data", "products.json")
-# If main.py is in /app/, then __file__ is /app/main.py. 
-# dirname is /app/. ".." from /app/ is /. So it looks for /data/products.json.
-# Let's adjust the COPY to match the expected structure.
+# The code expects 'data' to be accessible relative to the app
+# Our new path logic in database.py will check both 'data/' and '../data/'
 
-USER root
-RUN mkdir -p /data && chown user:user /data
-USER user
-COPY --chown=user data/ /data/
-
-# Expose the port FastAPI will run on
+# Expose port 7860
 EXPOSE 7860
 
 # Command to run the application
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+# We run from the root, so we need to point to backend.main:app
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "7860"]
