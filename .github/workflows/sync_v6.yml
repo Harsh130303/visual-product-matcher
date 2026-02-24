@@ -12,7 +12,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install Hugging Face Hub
         run: pip install huggingface_hub
-      - name: "CRITICAL: Uploading with HF CLI Tool"
+      - name: "v7: Official HF Upload Tool"
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: huggingface-cli upload Harsh-13yo/vpm-backend . . --repo-type=space --token=$HF_TOKEN --yes
+        run: |
+          echo "Listing files to be uploaded:"
+          ls -R
+          huggingface-cli upload Harsh-13yo/vpm-backend . --repo-type=space --token=$HF_TOKEN --yes
