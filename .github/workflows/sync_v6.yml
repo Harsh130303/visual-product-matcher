@@ -1,5 +1,5 @@
-# Sync to Hugging Face hub - Attempt 2026-02-24 13:07
-name: Sync to Hugging Face hub
+# OFFICIAL SYNC v6 - USING HF CLI (BYPASSING 10MB LIMIT)
+name: Sync to Hugging Face v6
 on:
   push:
     branches: [main]
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install Hugging Face Hub
         run: pip install huggingface_hub
-      - name: "Step 5: Official HF Upload Tool (Bypassing 10MB Limit)"
+      - name: "CRITICAL: Uploading with HF CLI Tool"
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: huggingface-cli upload Harsh-13yo/vpm-backend . . --repo-type=space --token=$HF_TOKEN --yes
