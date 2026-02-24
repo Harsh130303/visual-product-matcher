@@ -17,4 +17,4 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           echo "Starting secure upload of all project files..."
-          huggingface-cli upload Harsh-13yo/vpm-backend . --repo-type=space --token=$HF_TOKEN --yes
+          python3 -m huggingface_hub.commands.huggingface_cli upload Harsh-13yo/vpm-backend . --repo-type=space --token=$HF_TOKEN --yes
